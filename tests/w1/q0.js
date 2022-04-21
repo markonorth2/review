@@ -118,10 +118,10 @@ const round = function(number) {
         sum += arr[i]
       }
       mean = sum/arr.length
-      return mean
+      return Math.round(mean)
     }
   };
 
 
-  console.log("0.3 Answer:", Math.round(mean([1, 2, 3])))
-
+  console.log("0.3 Answer Scenario 1:", mean([1, 2, 3]))
+  console.log("0.3 Answer Scenario 2:", mean([]))
