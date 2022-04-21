@@ -108,7 +108,10 @@ const round = function(number) {
   */
   const mean = function(arr) {
     /* IMPLEMENT ME */
-    if (arr){
+    if (arr.length === 0){
+      return null
+    }
+    else {
       let sum = 0
       let mean = 0 
       for (let i = 0; i < arr.length; i++){
@@ -117,10 +120,8 @@ const round = function(number) {
       mean = sum/arr.length
       return mean
     }
-    else {
-      return null
-    }
   };
 
 
-  console.log("0.3 Answer:", mean([6,2,3,4,9,6,1,0,6]))
+  console.log("0.3 Answer:", Math.round(mean([1, 2, 3])))
+
