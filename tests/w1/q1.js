@@ -27,7 +27,7 @@
     let min = null
     for (const value of arr) {
       
-      if (min){
+      if (min || min === 0){
         if (value < min){
           min = value
           console.log("success", min)
@@ -41,7 +41,7 @@
     return min 
   };
 
-console.log("1.1 Answer:", min([6,2,3,4,9,6,1,0,5]))
+console.log("1.1 Answer:", min([6,2,3,4,9,6,-5,0,5]))
 /* ===========================================================================
 
   // Question 1.2
