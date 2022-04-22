@@ -45,9 +45,19 @@
 
   console.log("1.1 Answer:", min([6,2,3,4,9,6,-5,0,5]))
 
+  // Solution #2 for Question 1.1. Way easier solution than the first solution. 
+  const min2 = function(arr) {
+    let min = arr[0]
+    for (const value of arr) {
+      if (min > value){
+        min = value
+      }
+    }
+    return min
 
+  }
+  console.log("1.2 Answer Solution 2:", min([6,2,3,4,9,6,5]))
 
-  
 /* ===========================================================================
 
   // Question 1.2
