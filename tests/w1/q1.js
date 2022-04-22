@@ -98,11 +98,16 @@ Question 1.3
   */
   const range = function(arr) {
     maxValue = max(arr) 
+    minValue = min2(arr)
     console.log(maxValue)
+    console.log(minValue)
     
-  };
-  
+    return maxValue - minValue
 
+
+  };
+
+  console.log("1.3 Answer:", range([6,0,3,4,500,6,5]))
 
 
 
