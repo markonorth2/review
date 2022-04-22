@@ -81,7 +81,7 @@
     }
     return max
   };
-  console.log("1.2 Answer:", max([6,2,3,4,100,6,5]))
+  // console.log("1.2 Answer:", max([6,2,3,4,100,6,5]))
 /* ===========================================================================
 
 Question 1.3 
@@ -97,9 +97,12 @@ Question 1.3
   *    9
   */
   const range = function(arr) {
-    
+    maxValue = max(arr) 
+    console.log(maxValue)
     
   };
+  
+
 
 
 
